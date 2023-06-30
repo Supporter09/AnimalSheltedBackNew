@@ -1,0 +1,23 @@
+ [[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+autopep8 = "*"
+
+[packages]
+flask = "*"
+pylint = "*"
+mypy = "*"
+flask-cors = "*"
+flask-mongoengine = "*"
+python-dotenv = "*"
+flask-restful = "*"
+pymongo = "*"
+wheel = "*"
+flask-pymongo = "*"
+gunicorn = "*"
+
+[requires]
+python_version = "3.8"
