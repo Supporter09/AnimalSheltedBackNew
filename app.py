@@ -18,6 +18,7 @@ uri = os.environ.get("MONGODB_URI")
 mongoClient = MongoClient(uri)
 db = mongoClient.AnimalShelterDB
 
+print('Hello: ',uri)
 
 @app.route("/", methods=['GET'])
 @cross_origin()
