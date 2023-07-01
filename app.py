@@ -16,8 +16,8 @@ app = Flask(__name__)
 app.config['MONGO_URI'] =  os.getenv('MONGODB_URI')
 
 CORS(app, support_credentials=True)
-uri = os.getenv('MONGODB_URI')
-# uri = "mongodb+srv://s4yadmin:admin123@animalshelterdb.ub4xlid.mongodb.net/test"
+# uri = os.getenv('MONGODB_URI')
+uri = "mongodb+srv://s4yadmin:admin123@animalshelterdb.ub4xlid.mongodb.net/test"
 mongoClient = MongoClient(uri)
 db = mongoClient.AnimalShelterDB
 
