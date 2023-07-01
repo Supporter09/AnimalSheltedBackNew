@@ -7,10 +7,13 @@ from bson import json_util
 import json
 from bson.objectid import ObjectId
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__)
 # For PyMongo
-app.config['MONGO_URI'] = os.environ.get('MONGODB_URI')
+# app.config['MONGO_URI'] = os.environ.get('MONGODB_URI')
+app.config['MONGO_URI'] =  os.getenv('MONGODB_URI')
 
 CORS(app, support_credentials=True)
 uri = os.environ.get("MONGODB_URI")
