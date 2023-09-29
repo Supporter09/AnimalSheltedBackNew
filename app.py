@@ -8,6 +8,7 @@ import json
 from bson.objectid import ObjectId
 import os
 from dotenv import load_dotenv
+
 load_dotenv()
 
 app = Flask(__name__)
